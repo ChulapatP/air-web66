@@ -3,7 +3,7 @@
       <h1>Get All Users</h1>
       <div><h2>จำนวน User ทั้งหมด {{ users.length }} คน</h2></div>
       <div><button @click="navigateTo('/user/create')">เพื่มสมาชิก</button>
-        <button @click="navigateTo('/movies')">ดู List Movie ทั้งหมด</button>
+        <button @click="navigateTo('/airplanes')">ดู List Airplane ทั้งหมด</button>
         <button v-on:click="logout" >Logout</button></div><hr>
       <div v-for="i in users" v-bind:key="i.id">
         <div>ชื่อ: {{ i.name }}</div>

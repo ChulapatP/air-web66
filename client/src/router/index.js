@@ -2,13 +2,13 @@ import Vue from 'vue'
 import Router from 'vue-router'
 // Users
 import UserIndex from '@/components/Users/Index'
-import MovieIndex from '@/components/Movies/MovieIndex'
+import AirplaneIndex from '@/components/Airplanes/AirplaneIndex'
 import UserCreate from '@/components/Users/CreateUser'
-import CreateMovie from '@/components/Movies/CreateMovie'
+import CreateAirplane from '@/components/Airplanes/CreateAirplane'
 import UserEdit from '@/components/Users/EditUser'
-import EditMovie from '@/components/Movies/EditMovie'
+import EditAirplane from '@/components/Airplanes/EditAirplane'
 import UserShow from '@/components/Users/ShowUser'
-import ShowMovie from '@/components/Movies/ShowMovie'
+import ShowAirplane from '@/components/Airplanes/ShowAirplane'
 import Login from '@/components/Users/login'
 
 
@@ -21,9 +21,9 @@ export default new Router({
             component: UserIndex
         },
         {
-            path: '/movies',
-            name: 'movies',
-            component: MovieIndex
+            path: '/airplanes',
+            name: 'airplanes',
+            component: AirplaneIndex
         },
         {
             path: '/user/create',
@@ -31,9 +31,9 @@ export default new Router({
             component: UserCreate
         },
         {
-            path: '/movie/create',
-            name: 'movies-create',
-            component: CreateMovie
+            path: '/airplane/create',
+            name: 'airplanes-create',
+            component: CreateAirplane
         },
         {
             path: '/user/edit/:userId',
@@ -41,9 +41,9 @@ export default new Router({
             component: UserEdit
         },
         {
-            path: '/movie/edit/:movieId',
-            name: 'movie-edit',
-            component: EditMovie
+            path: '/airplane/edit/:airplaneId',
+            name: 'airplane-edit',
+            component: EditAirplane
         },
         {
             path: '/user/:userId',
@@ -51,9 +51,9 @@ export default new Router({
             component: UserShow
         },
         {
-            path: '/movie/:movieId',
-            name: 'movie',
-            component: ShowMovie
+            path: '/airplane/:airplaneId',
+            name: 'airplane',
+            component: ShowAirplane
         },
         // authen
 {
